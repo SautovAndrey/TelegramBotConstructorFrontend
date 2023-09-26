@@ -29,7 +29,7 @@ function App() {
 
         stompClient.activate();
         console.log("Stomp client activated");
-    }, []);
+    }, []); // eslint-disable-line
 
     return (
         <div className="App">
