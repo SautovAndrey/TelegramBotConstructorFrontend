@@ -7,7 +7,7 @@ function App() {
     const [messages, setMessages] = useState<string[]>([]);
 
     useEffect(() => {
-        console.log("App component mounted");
+        console.log("App component mounted"); // eslint-disable-line
         const socket = new SockJS('http://localhost:8080/messages');
         const stompClient = new Client({
             webSocketFactory: () => socket,
