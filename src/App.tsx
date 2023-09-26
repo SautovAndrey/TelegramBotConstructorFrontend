@@ -28,7 +28,7 @@ function App() {
         };
 
         stompClient.activate();
-        console.log("Stomp client activated");
+        console.log("Stomp client activated");// eslint-disable-line
     }, []); // eslint-disable-line
 
     return (
